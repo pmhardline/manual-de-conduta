@@ -397,7 +397,7 @@
   }
 
   .upf-cell.left { background: rgba(224,82,82,0.15); color: #e87777; }
-  .upf-cell.right { background: rgba(76,175,125,0.15); color: #6dc99a; }
+  .upf-cell.right { background: rgba(224,82,82,0.15); color: #e87777; }
   .upf-cell.l-orange { background: rgba(245,120,35,0.15); color: #e8a060; }
   .upf-cell.r-orange { background: rgba(245,120,35,0.15); color: #e8a060; }
   .upf-cell.l-yellow { background: rgba(245,200,35,0.12); color: #e8cc60; }
@@ -645,6 +645,15 @@
 
     <div class="nav-section-label">Infrações</div>
     <a class="nav-item" onclick="showPage('infracoes')"><span class="dot"></span> Infrações e Definições</a>
+
+    <div class="nav-section-label">Cursos</div>
+    <a class="nav-item" onclick="showPage('curso-comunicacao')"><span class="dot"></span> Comunicação Operacional</a>
+    <a class="nav-item" onclick="showPage('curso-modulacao')"><span class="dot"></span> Modulação e Anúncios</a>
+    <a class="nav-item" onclick="showPage('curso-tablet')"><span class="dot"></span> Curso de Tablet</a>
+    <a class="nav-item" onclick="showPage('curso-acompanhamento')"><span class="dot"></span> Curso de Acompanhamento</a>
+    <a class="nav-item" onclick="showPage('curso-abordagem')"><span class="dot"></span> Curso de Abordagem</a>
+    <a class="nav-item" onclick="showPage('curso-boosting')"><span class="dot"></span> Boosting</a>
+    <a class="nav-item" onclick="showPage('curso-ruas')"><span class="dot"></span> Ruas e Referências</a>
   </nav>
 </aside>
 
@@ -1203,6 +1212,487 @@
       </div>
     </div>
 
+      <div class="page-footer">
+        <button class="footer-btn" onclick="showPage('cod5')">← Anterior</button>
+        <button class="footer-btn" onclick="showPage('curso-comunicacao')">Próximo: Cursos →</button>
+      </div>
+    </div>
+
+    <!-- ══ CURSO COMUNICAÇÃO ══ -->
+    <div class="section-page" id="page-curso-comunicacao">
+      <div class="page-header">
+        <div class="label">📡 Curso</div>
+        <h1>Comunicação Operacional</h1>
+        <p class="page-desc">Manual do Curso de Comunicação Operacional (Modulação) — informações básicas sobre frequências e canais de comunicação.</p>
+      </div>
+
+      <h2>Meios de Comunicação</h2>
+      <p>Dentro da polícia utilizamos dois principais meios de comunicação: a <strong>rádio principal</strong> (rádio policia) e o <strong>chat de comunicação interna (/cp)</strong>.</p>
+
+      <h2>Frequências</h2>
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">policia</div>
+          <div class="def-desc">Rádio onde <strong>todos os policiais devem estar conectados</strong>, independentemente da unidade.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">policiaspeed</div>
+          <div class="def-desc">Rádio exclusiva da unidade SPEED. É proibida a entrada de qualquer pessoa que não pertença à unidade. Caso seja identificada essa entrada, o curso será removido.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">policiaswat</div>
+          <div class="def-desc">Rádio exclusiva da unidade SWAT. É proibida a entrada de qualquer pessoa que não pertença à unidade.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">policiagtm</div>
+          <div class="def-desc">Rádio exclusiva da unidade GTM. É proibida a entrada de qualquer pessoa que não pertença à unidade.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">policiagar</div>
+          <div class="def-desc">Rádio exclusiva da unidade GAR. É proibida a entrada de qualquer pessoa que não pertença à unidade.</div>
+        </div>
+      </div>
+
+      <div class="callout info">
+        <span class="callout-icon">📻</span>
+        <div>Para uma melhor comunicação nas QRUs, sempre que uma QRU estiver completa, informe a mudança de rádio para <strong>Polícia 1, Polícia 2</strong> e assim por diante. Suba para as frequências utilizando a <strong>seta do teclado</strong>.</div>
+      </div>
+
+      <h2>Chat /CP</h2>
+      <p>Principal meio de comunicação após a rádio. Usado para anúncios de entrada/saída/pausas, solicitação de PFEM, comunicados e informes de QRU.</p>
+
+      <div class="callout danger">
+        <span class="callout-icon">🚫</span>
+        <div>É expressamente <strong>proibido</strong> perguntar se há QRUs com vaga via RÁDIO. Deve-se utilizar o <code>/cp</code>.</div>
+      </div>
+
+      <div class="code-block">
+        <div class="comment">// Exemplos /CP</div>
+        QAP Central, alguma QSV com vaga para PTR. QTH DP-G. (1/3)<br>
+        QAP Perícia, estamos com um indivíduo em posse de entorpecentes nas Celas da DP-Praça.
+      </div>
+
+      <h2>Chat /911 — Comunicação Global</h2>
+      <p>Canal global visível para todos os civis. Usado para comunicar sobre veículos abandonados antes de aplicar multa. Chame <strong>3 vezes</strong> com intervalo mínimo de 3 minutos.</p>
+      <div class="code-block">
+        Sr. Hank Alves, encontra-se na cidade? (1/3)<br>
+        Sr. Hank Alves, encontra-se na cidade? (2/3)<br>
+        Sr. Hank Alves, encontra-se na cidade? (3/3)
+      </div>
+
+      <h2>Chat /112 — Médicos</h2>
+      <p>Visível para todos os civis. Utilizado <strong>exclusivamente</strong> para solicitar autorização para prestação de primeiros socorros.</p>
+      <div class="code-block">"Olá, Doutores, boa tarde. Os oficiais estão autorizados a prestar primeiros socorros nas ruas? TKS, Cmd. Patrick Alves Senna."</div>
+
+      <h2>Liberação de Rádio Após QRU</h2>
+      <p>Após a finalização de uma QRU, o oficial responsável deverá informar no CP que a frequência está liberada.</p>
+      <div class="code-block">/cp Rádio Polícia2 Liberada</div>
+
+      <h2>Atualização de Informes de QRU no /CP</h2>
+      <p>Ao iniciar um acompanhamento, é responsabilidade da primária manter os informes no /CP seguindo o modelo:</p>
+      <div class="code-block">
+        <div class="comment">// Formato</div>
+        QRU | VEÍCULO | 3 DÍGITOS FINAL PLACA | VAGAS OU COD 4, 5 E 6 + RADIO<br><br>
+        <div class="comment">// Exemplo</div>
+        ATM | Sultan II | Placa: JE5 | Sem vagas | Polícia2
+      </div>
+
+      <div class="page-footer">
+        <button class="footer-btn" onclick="showPage('infracoes')">← Anterior</button>
+        <button class="footer-btn" onclick="showPage('curso-modulacao')">Próximo: Modulação →</button>
+      </div>
+    </div>
+
+    <!-- ══ CURSO MODULAÇÃO ══ -->
+    <div class="section-page" id="page-curso-modulacao">
+      <div class="page-header">
+        <div class="label">🎙️ Curso</div>
+        <h1>Modulação e Anúncios</h1>
+        <p class="page-desc">Modelos de comunicação na rádio e anúncios utilizados em diferentes situações operacionais.</p>
+      </div>
+
+      <h2>Exemplos de Modulação</h2>
+      <div class="code-block">
+        <div class="comment">// Abordagem COD 2</div>
+        QAP Central, unidade 271 iniciando abordagem de COD 2, QRU de suspeita de tráfico de drogas, a uma BF400 branca tripulado X2, no QTH Praia sentido Oeste próximo ao Píer, vagas para 2 unidades, preferência GTM.
+      </div>
+      <div class="code-block">
+        <div class="comment">// Acompanhamento</div>
+        QAP Central, unidade 921, iniciando acompanhamento QRU de Corrida Ilegal, na rua Straberry sentido Norte próximo à Praça, T20 coloração verde tripulada X2, vagas para 2 unidades preferência SPEED.
+      </div>
+      <div class="code-block">
+        <div class="comment">// QRX Prioridade</div>
+        QRX Prioridade Central, visual de um Shafter amarelo, placa zumbie, e indivíduos de roupas pretas, descalços efetuando disparos contra a unidade 529 na região do Porto.
+      </div>
+      <div class="code-block">
+        <div class="comment">// COD 4</div>
+        QAP Central, COD 4 no Silvia prata, QRU tráfico de drogas, indivíduo capotou o veículo na Forum Drive, GROOVE. TKS a todas as unidades.
+      </div>
+
+      <h2>QTA — Tipos</h2>
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">QTA DEFINITIVO</div>
+          <div class="def-desc">Pneu furado, sem gasolina, QSV capotada etc. Não retorna para a QRU, exceto em retomada de visual após CÓDIGO 6, pois inicia-se uma nova QRU com os mesmos oficiais.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">BREVE QTA</div>
+          <div class="def-desc">Terciária presta socorro em acidentes envolvidos na QRU e poderá retornar ao acompanhamento assim que possível. Também aplicável se o cachorro morder ou parceiro de PTR tiver forte dor de cabeça.</div>
+        </div>
+      </div>
+
+      <h2>Prioridade de Modulação em COD5</h2>
+      <div class="callout warning">
+        <span class="callout-icon">⚡</span>
+        <div><strong>SWAT &gt; GAR &gt; Maior Patente presente na QRU</strong><br>Todos os demais oficiais deverão respeitar rigorosamente essa hierarquia.</div>
+      </div>
+
+      <h2>Composição da GAR em Ocorrências</h2>
+      <ul class="rule-list">
+        <li><span class="rule-num">✓</span> Fuga de Abordagem / Suspeito Armado / Confirmado Código 5: GAR presta apoio independente da categoria do veículo.</li>
+        <li><span class="rule-num">✓</span> Demais QRUs: Somente S e A em veículos 4 rodas, motos qualquer categoria.</li>
+        <li><span class="rule-num">✓</span> O GAR poderá pegar visual de ocorrências com veículos de categorias não permitidas, até que chegue uma unidade terrestre, então deve dar QTA.</li>
+      </ul>
+
+      <h2>Anúncios — Ações Fechadas</h2>
+      <div class="callout info">
+        <span class="callout-icon">📢</span>
+        <div>Este anúncio deve ser realizado sempre pelo <strong>aplicativo de anúncios do telefone</strong>.</div>
+      </div>
+      <div class="code-block">A área do [NOME DA AÇÃO] encontra-se restrita por estar sob atividade criminosa, não se aproxime, risco de ser alvejado. ESTE SERÁ O ÚNICO AVISO!</div>
+
+      <h2>Anúncios Gerais</h2>
+      <div class="code-block">
+        <div class="comment">// Retirada de CÓD.5</div>
+        A partir deste informe, a polícia irá se retirar da QRU de disparos (CÓDIGO 5) e será prestado primeiros socorros apenas aos oficiais caídos/feridos no local. Em seguida retornaremos normalmente nossas atividades militares a população do Hardline.
+      </div>
+      <div class="code-block">
+        <div class="comment">// Pacificação</div>
+        Comunicamos que hoje será feito uma pacificação na região do Gueto da Groove Street. O objetivo é promover a segurança e tranquilidade em nossa cidade, além de acabar com o crime organizado. Pedimos a colaboração de todos os cidadãos para que se afastem da área durante a operação. Qualquer indivíduo que permanecer na região será considerado hostil.
+      </div>
+
+      <div class="page-footer">
+        <button class="footer-btn" onclick="showPage('curso-comunicacao')">← Anterior</button>
+        <button class="footer-btn" onclick="showPage('curso-tablet')">Próximo: Curso Tablet →</button>
+      </div>
+    </div>
+
+    <!-- ══ CURSO TABLET ══ -->
+    <div class="section-page" id="page-curso-tablet">
+      <div class="page-header">
+        <div class="label">📱 Curso</div>
+        <h1>Curso de Tablet</h1>
+        <p class="page-desc">Procedimentos de prisão, uso do tablet policial, boletins de ocorrência e apreensões.</p>
+      </div>
+
+      <div class="callout warning">
+        <span class="callout-icon">🚧</span>
+        <div>Esta seção está em construção e será preenchida em breve.</div>
+      </div>
+
+      <div class="page-footer">
+        <button class="footer-btn" onclick="showPage('curso-modulacao')">← Anterior</button>
+        <button class="footer-btn" onclick="showPage('curso-acompanhamento')">Próximo: Curso Acompanhamento →</button>
+      </div>
+    </div>
+
+    <!-- ══ CURSO ACOMPANHAMENTO ══ -->
+    <div class="section-page" id="page-curso-acompanhamento">
+      <div class="page-header">
+        <div class="label">🚔 Curso</div>
+        <h1>Curso de Acompanhamento</h1>
+        <p class="page-desc">Orientações, técnicas e procedimentos para acompanhamentos veiculares e a pé.</p>
+      </div>
+
+      <h2>Orientações Gerais</h2>
+      <ul class="rule-list">
+        <li><span class="rule-num">01</span> Para quem não tem certificado ou não pertença a grupamento que permita uso solo da viatura, é proibido patrulhar sozinho.</li>
+        <li><span class="rule-num">02</span> Soldado+ sem parceiro disponível pode patrulhar SOLO, respeitando a preservação da sua segurança.</li>
+        <li><span class="rule-num">03</span> A única ocasião de 4 policiais patrulhando juntos é no patrulhamento com PCD.</li>
+        <li><span class="rule-num">04</span> Em acompanhamento de motocicleta com queda, deve-se tentar cabeçada ou taser antes que o indivíduo acelere novamente. Em nova queda, spike é liberado.</li>
+      </ul>
+
+      <h2>Preservação da Vida</h2>
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">COLISÕES NO ACOMPANHAMENTO</div>
+          <div class="def-desc">Secundária ou terciária verifica o veículo colidido/atropelado. Se estiver de primária sem secundária/terciária, grave a placa do acompanhado e pare para ajudar.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">COLISÕES FORA DO ACOMPANHAMENTO</div>
+          <div class="def-desc">Como policial, é obrigação auxiliar e arcar com custos caso haja dano material.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">VELOCIDADE EM CÓDIGO 0</div>
+          <div class="def-desc">Seja responsável no patrulhamento. Tenha cuidado com a velocidade da viatura para evitar acidentes.</div>
+        </div>
+      </div>
+
+      <h2>Tipos de Acompanhamento</h2>
+      <div class="vehicle-cards">
+        <div class="vehicle-card primary">
+          <span class="v-label">PRIMÁRIA</span>
+          <div class="v-body">Responsável por todo o acompanhamento. Primeiro visual da QRU, modulação e informações relevantes para decisão. Permanece no visual, realiza o mesmo traçado do indivíduo, domínio do GPS e comunicação de direções.</div>
+        </div>
+        <div class="vehicle-card secondary">
+          <span class="v-label">SECUNDÁRIA</span>
+          <div class="v-body">Manter-se próxima à primária e assumir a QRU se necessário. Realiza adiantamentos curtos e auxilia a terciária em becos. Faz cercos em becos estreitos sem atrapalhar a posição principal.</div>
+        </div>
+        <div class="vehicle-card tertiary">
+          <span class="v-label">TERCIÁRIA</span>
+          <div class="v-body">Principal responsável pelo CERCO e apoios. Utiliza cerco, antecipações e adiantamentos. Em acidente envolvendo civis na QRU, anuncia BREVE QTA e presta apoio. Deve antecipar traçados que o acompanhado fará.</div>
+        </div>
+      </div>
+
+      <h2>Progressão de Força no Acompanhamento</h2>
+      <p>Progride conforme atitudes do acompanhado, a partir do momento que não haja mais fuga limpa:</p>
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">A — Interferência automobilística</div>
+          <div class="def-desc">Dar PIT, bater de propósito → utilizar PIT e BOX.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">B — Interferência com resgate ou falta de preservação sem intenção</div>
+          <div class="def-desc">Utilizar PIT, BOX e SPIKE.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">C — Resgate pela segunda vez ou falta de preservação com intenção</div>
+          <div class="def-desc">Utilizar PIT, BOX, SPIKE.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">D — Falta grave de preservação (jogar na água, atirar contra polícia)</div>
+          <div class="def-desc">Utilizado CÓDIGO 5 no INDIVÍDUO.</div>
+        </div>
+      </div>
+
+      <h2>Técnicas de Progressão Veicular</h2>
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">PIT</div>
+          <div class="def-desc">Manobra exclusiva do INTERCEPTOR. Utiliza o vácuo/vento forçando a frente da viatura sem encostar no para-choque traseiro. Objetivo: desabilitar o veículo fazendo-o perder o controle. Limite de 180 km/h.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">SPIKE</div>
+          <div class="def-desc">Tira de ferrões para furar pneus. Requer rapidez e posicionamento estratégico. Liberação apenas para GTM e INTERCEPTOR. A terciária é responsável pela aplicação se não houver unidade adicional.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">BOX</div>
+          <div class="def-desc">Bloqueio em volta do veículo acompanhado (viatura na frente, traseira e laterais), impossibilitando movimentação. Frequentemente usado após PIT e SPIKE.</div>
+        </div>
+      </div>
+
+      <h2>Fuga Aquática</h2>
+      <ul class="rule-list">
+        <li><span class="rule-num">→</span> Se houver indício de jogar o veículo na água, verificar progressão de força.</li>
+        <li><span class="rule-num">→</span> Se entrar na água sem veículo propositalmente: solicitar que saia verbalmente (1 vez). Se não sair, neutralizar com SOCOS.</li>
+      </ul>
+
+      <h2>Acompanhamento a Pé</h2>
+      <p>Quando iniciado por stall/capotamento ou veículo inoperante, usa-se a "CABEÇADA" para derrubar o indivíduo. Ao cair, informar QRA e verbalizar algema. Se não conseguir algemar, continue o acompanhamento a pé, mas <strong>NÃO SEGURE pelo braço</strong>.</p>
+
+      <div class="callout warning">
+        <span class="callout-icon">⚡</span>
+        <div>Nunca utilize o Taser em PNEU. É permitido o uso mesmo se o indivíduo estiver molhado.</div>
+      </div>
+
+      <h2>Como Mudar a Classe da QSV</h2>
+      <div class="callout info">
+        <span class="callout-icon">🚗</span>
+        <div>É obrigatório a mudança de classe da viatura utilizando a tecla <strong>"G"</strong> para a mesma classe do veículo a ser acompanhado!</div>
+      </div>
+
+      <div class="page-footer">
+        <button class="footer-btn" onclick="showPage('curso-tablet')">← Anterior</button>
+        <button class="footer-btn" onclick="showPage('curso-abordagem')">Próximo: Curso Abordagem →</button>
+      </div>
+    </div>
+
+    <!-- ══ CURSO ABORDAGEM ══ -->
+    <div class="section-page" id="page-curso-abordagem">
+      <div class="page-header">
+        <div class="label">🤝 Curso</div>
+        <h1>Curso de Abordagem</h1>
+        <p class="page-desc">Procedimentos detalhados de abordagem por nível de risco, estrutura da abordagem e testes residuais.</p>
+      </div>
+
+      <div class="callout info">
+        <span class="callout-icon">📌</span>
+        <div>
+          • Nunca informe o motivo da abordagem antes do início<br>
+          • Sempre forneça seu QRA no início<br>
+          • Haja cordialmente e com bom senso<br>
+          • Todas as ações devem ser indicadas ao abordado<br>
+          • <strong>Nunca inicie uma abordagem sozinho</strong> — solicite apoio à Central via Rádio Polícia
+        </div>
+      </div>
+
+      <h2>Estrutura da Abordagem</h2>
+      <div class="def-list">
+        <div class="def-item"><div class="def-term">1 — QSV</div><div class="def-desc">Luminoso e sonoro sempre ligados!</div></div>
+        <div class="def-item"><div class="def-term">2 — ORDEM DE PARADA</div><div class="def-desc">"Cidadão, encoste o veículo a direita." / "Desligue o veículo." / "Abaixe os vidros." / "Mantenha as mãos no volante, onde eu possa ver." / "Não utilize nenhum meio de comunicação durante a abordagem."</div></div>
+        <div class="def-item"><div class="def-term">3 — MODULAÇÃO INICIAL</div><div class="def-desc">"QAP Central, Unidade 600 iniciando abordagem de COD 2, QRU de suspeita de tráfico de drogas, a um JUGULAR preto, tripulado X2, QTH praça na Strawberry Avenue. Solicito QRR de mais 2 unidades."</div></div>
+        <div class="def-item"><div class="def-term">4 — ABORDAGEM (após QRR)</div><div class="def-desc">"Cidadão, desça do veículo com as mãos para cima." / Pode colocar as mãos para trás e ir até a calçada para conversar.</div></div>
+        <div class="def-item"><div class="def-term">5 — APRESENTAÇÃO</div><div class="def-desc">"Boa tarde, sou a Sgt. Harley Ventura, qual o seu nome?" — Verifique se o indivíduo possui PENDÊNCIAS, se está PROCURADO e se o PROPRIETÁRIO DO VEÍCULO está correto.</div></div>
+        <div class="def-item"><div class="def-term">6 — MOTIVO DA ABORDAGEM</div><div class="def-desc">Explique o motivo. Questione de onde o cidadão estava vindo, para onde ia. Se a história for boa, libere. Caso contrário, um Soldado+ poderá fazer o teste residual. Se positivo, conduza à prisão.</div></div>
+        <div class="def-item"><div class="def-term">7 — LIBERAÇÃO</div><div class="def-desc">"Como está tudo certo com suas documentações e a sua história parece coerente, vamos te liberar. Assim que desligarmos o luminoso o Sr. Poderá se retirar do local. Agradecemos a contribuição e disponha sempre da polícia militar."</div></div>
+        <div class="def-item"><div class="def-term">8 — MODULAÇÃO FINAL</div><div class="def-desc">"QAP Central, COD 4 na abordagem de COD 2, QRU suspeita de tráfico de drogas, ao JUGULAR preto na Strawberry Avenue. TKS a todas as unidades."</div></div>
+      </div>
+
+      <h2>Abordagem em Setores Legais (Hospital/Mecânica)</h2>
+      <p>O policial SEMPRE priorizará tratar das situações do lado de <strong>FORA DO ESTABELECIMENTO</strong>. Caso o indivíduo não coopere, a abordagem e procedimentos policiais serão feitos ali mesmo, sempre mantendo postura e agilidade.</p>
+
+      <h2>Testes Residuais de Pólvora</h2>
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">TESTE RESIDUAL</div>
+          <div class="def-desc">Utilizado para detectar explosivos (C4), manuseio ou consumo de drogas e uso de Lockpick.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">TESTE DE PÓLVORA</div>
+          <div class="def-desc">Utilizado quando há suspeita de disparo de arma de fogo.</div>
+        </div>
+      </div>
+
+      <div class="callout warning">
+        <span class="callout-icon">⚠️</span>
+        <div>Caso a central informe uma QRU específica (ex: Tráfico de Drogas), apenas o teste relacionado à natureza da ocorrência deverá ser considerado para fins legais. Deve haver resultado positivo diretamente ligado à QRU principal.</div>
+      </div>
+
+      <h2>Itens na Revista</h2>
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">RETIRAMOS SEMPRE</div>
+          <div class="def-desc">Lockpick, drogas, colete, dinheiro ilícito, algema, armamento, munição, capuz, adrenalina, C4, itens roubados (porta-malas), missão, Chip Ilegal (retirar tablet, coletar chip, devolver tablet).</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">RETIRAMOS SE USADOS NO CRIME</div>
+          <div class="def-desc">Corda (para resgate), armas brancas (taco, lanterna, chave de grifo, pé de cabra). Certifique-se que foram usados para crimes ilegais.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">NÃO RETIRAMOS</div>
+          <div class="def-desc">Rádio e celular (sem sinal na prisão), energético, bandagem, kit reparo e galão de gasolina.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">REVISTA VEICULAR</div>
+          <div class="def-desc">Em qualquer QRU que envolva um veículo (carro, moto, helicóptero), está autorizada a revista veicular COMPLETA (porta-luvas e porta-malas).</div>
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <button class="footer-btn" onclick="showPage('curso-acompanhamento')">← Anterior</button>
+        <button class="footer-btn" onclick="showPage('curso-boosting')">Próximo: Boosting →</button>
+      </div>
+    </div>
+
+    <!-- ══ CURSO BOOSTING ══ -->
+    <div class="section-page" id="page-curso-boosting">
+      <div class="page-header">
+        <div class="label">🚗 Curso</div>
+        <h1>Boosting</h1>
+        <p class="page-desc">Procedimentos para ocorrências de roubo de veículo com rastreamento (Boosting).</p>
+      </div>
+
+      <div class="callout danger">
+        <span class="callout-icon">🚫</span>
+        <div>É <strong>proibido o confronto armado entre jogadores</strong>. Permitido apenas contra NPCs.</div>
+      </div>
+
+      <h2>Como Funciona</h2>
+      <p>Ao achar o veículo alvo, os meliantes irão furtá-lo do modo convencional para destrancar e ligá-lo. O veículo contém um dispositivo GPS de furto que sinaliza um alarme direto para a central policial (<strong>TRACKING</strong>). Os meliantes tentam retirar esse GPS — regressivamente o alarme demora mais para alertar, até não alertar mais.</p>
+
+      <h2>Termos Usados</h2>
+      <div class="def-list">
+        <div class="def-item"><div class="def-term">PRINCIPAL</div><div class="def-desc">Nome dado para o veículo que está sendo roubado.</div></div>
+        <div class="def-item"><div class="def-term">APOIOS</div><div class="def-desc">Demais veículos que estão no início da QRU, que na maioria das vezes tentará sair do local e retornará depois.</div></div>
+        <div class="def-item"><div class="def-term">TRACKING</div><div class="def-desc">Nome do alarme enviado para a central policial, mostrando a localização do veículo com nome, classe, placa e cor.</div></div>
+      </div>
+
+      <h2>Liberação de Unidades por Classe</h2>
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">PRINCIPAL B, C ou D</div>
+          <div class="def-desc">Abrirá a QRU com liberação para 3 unidades no principal, sem GAR.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">PRINCIPAL S e A</div>
+          <div class="def-desc">Será 1 GAR e 3 unidades.</div>
+        </div>
+      </div>
+
+      <h2>Progressão de Força — Boosting</h2>
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">PRINCIPAL B, C ou D</div>
+          <div class="def-desc">PIT, BOX e SPIKE liberados nos veículos de APOIO. <strong>Não é permitido PIT e BOX no principal.</strong></div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">PRINCIPAL A ou S</div>
+          <div class="def-desc">PIT e BOX liberados assim que o TRACKING for finalizado. PIT, BOX e SPIKE liberados nos APOIOS.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">APOIOS AGRESSIVOS</div>
+          <div class="def-desc">Se TODOS os APOIOS estiverem "zaralhando" (agressivos, fazendo PIT de qualquer jeito), seja reativo: PIT, BOX e SPIKE liberados no PRINCIPAL e APOIOS.</div>
+        </div>
+      </div>
+
+      <h2>Fuga a Pé</h2>
+      <p>Com o tempo, os meliantes tentarão ser resgatados e descartar o veículo (risco de explosão). Qualquer resgate durante a QRU de Boosting é tratado como QRU normal. Ao aproximar e mostrar intenção de abrir porta de veículo: <strong>taser liberado</strong>.</p>
+
+      <h2>Prisão</h2>
+      <p>Com a captura, os indivíduos serão conduzidos pelo crime de Boosting, que <strong>não tem direito a fiança</strong>. Aplique apenas o crime de Boosting.</p>
+
+      <div class="page-footer">
+        <button class="footer-btn" onclick="showPage('curso-abordagem')">← Anterior</button>
+        <button class="footer-btn" onclick="showPage('curso-ruas')">Próximo: Ruas e Referências →</button>
+      </div>
+    </div>
+
+    <!-- ══ RUAS E REFERÊNCIAS ══ -->
+    <div class="section-page" id="page-curso-ruas">
+      <div class="page-header">
+        <div class="label">🗺️ Referência</div>
+        <h1>Ruas e Referências</h1>
+        <p class="page-desc">Nomes oficiais das ruas da cidade e seus pontos de referência populares.</p>
+      </div>
+
+      <table class="q-table">
+        <thead>
+          <tr>
+            <th>Referência Popular</th>
+            <th>Nome Oficial / Direção</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Rua da Faculdade</td><td class="q-meaning">NORTH ROCKFORD DRIVE | SUL</td></tr>
+          <tr><td>Rua do Cemitério</td><td class="q-meaning">WEST ECLIPSE BOULEVARD | LESTE</td></tr>
+          <tr><td>Rua HP Praia</td><td class="q-meaning">PLAYA VISTA | SUL</td></tr>
+          <tr><td>Rua Alta Shopping</td><td class="q-meaning">BOULEVARD DEL PERRO | LESTE</td></tr>
+          <tr><td>Rua Bahama Mamas</td><td class="q-meaning">MARATHON AVENUE | LESTE</td></tr>
+          <tr><td>Rua Hollywood / Cinema / Estacionamento Colorido</td><td class="q-meaning">SOUTH ROCKFORD DRIVE | SUL</td></tr>
+          <tr><td>Rua DP RAED / DP do Veneza</td><td class="q-meaning">SAN ANDREAS AVENUE | OESTE</td></tr>
+          <tr><td>Rua Monumento Chinês / Estacionamento Vermelho / Praça</td><td class="q-meaning">VESPUCCI BOULEVARD</td></tr>
+          <tr><td>Rua Praça / Costa do Pillbox (HP Praça)</td><td class="q-meaning">STRAWBERRY AVENUE</td></tr>
+          <tr><td>Rua Frente Pillbox (HP Praça)</td><td class="q-meaning">ELGIN AVENUE</td></tr>
+          <tr><td>Rodovia Lateral Arcadius e Construção Alta</td><td class="q-meaning">DEL PERRO FREEWAY | LESTE</td></tr>
+          <tr><td>Rodovia Lateral Estacionamento Vermelho</td><td class="q-meaning">LA PUERTA FREEWAY</td></tr>
+          <tr><td>Rua Tequilala / Hotel Eclipse Towers / até MC Donald's e Disco Voador</td><td class="q-meaning">ECLIPSE BOULEVARD</td></tr>
+          <tr><td>Após Banco Central</td><td class="q-meaning">VINEWOOD BOULEVARD</td></tr>
+          <tr><td>Rua Lojinha Central / Condomínio Central / Posto do Central</td><td class="q-meaning">CLINTON AVENUE</td></tr>
+          <tr><td>Rua de Baixo do Banco Central / Ammunation</td><td class="q-meaning">SPANISH AVENUE</td></tr>
+          <tr><td>Rua Vila do Chaves</td><td class="q-meaning">HAWICK AVENUE</td></tr>
+          <tr><td>Rua Ammunation Praça</td><td class="q-meaning">ADAM'S APPLE BOULEVARD</td></tr>
+          <tr><td>Rua Construção Baixa (Alta News)</td><td class="q-meaning">CALAIS AVENUE</td></tr>
+          <tr><td>Rua Alta News</td><td class="q-meaning">PALOMINO AVENUE</td></tr>
+          <tr><td>Veneza</td><td class="q-meaning">PROSPERITY STREET</td></tr>
+        </tbody>
+      </table>
+
+      <div class="page-footer">
+        <button class="footer-btn" onclick="showPage('curso-boosting')">← Anterior</button>
+        <span style="color: var(--text-muted); font-size: 12px;">Fim dos Manuais</span>
+      </div>
+    </div>
+
   </div><!-- /content-wrap -->
 </main>
 
@@ -1219,6 +1709,13 @@
     'abordagem': 'Abordagem',
     'cod5': 'Comportamento em CÓD.5',
     'infracoes': 'Infrações e Definições',
+    'curso-comunicacao': 'Comunicação Operacional',
+    'curso-modulacao': 'Modulação e Anúncios',
+    'curso-tablet': 'Curso de Tablet',
+    'curso-acompanhamento': 'Curso de Acompanhamento',
+    'curso-abordagem': 'Curso de Abordagem',
+    'curso-boosting': 'Boosting',
+    'curso-ruas': 'Ruas e Referências',
   };
 
   function showPage(id) {
