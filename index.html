@@ -158,6 +158,14 @@
 
   .nav-item.active .dot { opacity: 1; }
 
+  .nav-sub {
+    padding-left: 36px !important;
+    font-size: 12.5px !important;
+    color: var(--text-muted);
+    opacity: 0.85;
+  }
+  .nav-sub:hover { opacity: 1; }
+
   /* ─── MAIN CONTENT ─── */
   .main {
     margin-left: var(--sidebar-w);
@@ -628,32 +636,32 @@
 
   <nav class="sidebar-nav">
     <div class="nav-section-label">Introdução</div>
-    <a class="nav-item active" onclick="showPage('intro')"><span class="dot"></span> Manual de Conduta</a>
-    <a class="nav-item" onclick="showPage('regulamento')"><span class="dot"></span> Regulamento Básico</a>
+    <a class="nav-item active" onclick="showPage('intro')">📋 Manual de Conduta</a>
+    <a class="nav-item" onclick="showPage('regulamento')">📜 Regulamento Básico</a>
 
     <div class="nav-section-label">Organização</div>
-    <a class="nav-item" onclick="showPage('hierarquia')"><span class="dot"></span> Hierarquia Militar</a>
-    <a class="nav-item" onclick="showPage('conduta')"><span class="dot"></span> Conduta Militar (UPF)</a>
+    <a class="nav-item" onclick="showPage('hierarquia')">🎖️ Hierarquia Militar</a>
+    <a class="nav-item" onclick="showPage('conduta')">⚡ Conduta Militar (UPF)</a>
 
     <div class="nav-section-label">Operações</div>
-    <a class="nav-item" onclick="showPage('comunicacao')"><span class="dot"></span> Comunicação</a>
-    <a class="nav-item" onclick="showPage('codigos')"><span class="dot"></span> Códigos Q</a>
-    <a class="nav-item" onclick="showPage('acompanhamento')"><span class="dot"></span> Acompanhamento</a>
-    <a class="nav-item" onclick="showPage('revista')"><span class="dot"></span> Revista</a>
-    <a class="nav-item" onclick="showPage('abordagem')"><span class="dot"></span> Abordagem</a>
-    <a class="nav-item" onclick="showPage('cod5')"><span class="dot"></span> Comportamento em CÓD.5</a>
+    <a class="nav-item" onclick="showPage('comunicacao')">📡 Comunicação</a>
+    <a class="nav-item" onclick="showPage('codigos')">🔤 Códigos Q</a>
+    <a class="nav-item" onclick="showPage('acompanhamento')">🚔 Acompanhamento</a>
+    <a class="nav-item" onclick="showPage('revista')">🔍 Revista</a>
+    <a class="nav-item" onclick="showPage('abordagem')">🤝 Abordagem</a>
+    <a class="nav-item" onclick="showPage('cod5')">🔴 Comportamento em CÓD.5</a>
 
     <div class="nav-section-label">Infrações</div>
-    <a class="nav-item" onclick="showPage('infracoes')"><span class="dot"></span> Infrações e Definições</a>
+    <a class="nav-item" onclick="showPage('infracoes')">⚖️ Infrações e Definições</a>
 
     <div class="nav-section-label">Cursos</div>
-    <a class="nav-item" onclick="showPage('curso-comunicacao')"><span class="dot"></span> Comunicação Operacional</a>
-    <a class="nav-item" onclick="showPage('curso-modulacao')"><span class="dot"></span> Modulação e Anúncios</a>
-    <a class="nav-item" onclick="showPage('curso-tablet')"><span class="dot"></span> Curso de Tablet</a>
-    <a class="nav-item" onclick="showPage('curso-acompanhamento')"><span class="dot"></span> Curso de Acompanhamento</a>
-    <a class="nav-item" onclick="showPage('curso-abordagem')"><span class="dot"></span> Curso de Abordagem</a>
-    <a class="nav-item" onclick="showPage('curso-boosting')"><span class="dot"></span> Boosting</a>
-    <a class="nav-item" onclick="showPage('curso-ruas')"><span class="dot"></span> Ruas e Referências</a>
+    <a class="nav-item" onclick="showPage('curso-comunicacao')">📡 Comunicação Operacional</a>
+    <a class="nav-item nav-sub" onclick="showPage('curso-modulacao')">🎙️ Modulação e Anúncios</a>
+    <a class="nav-item" onclick="showPage('curso-tablet')">📱 Curso de Tablet</a>
+    <a class="nav-item" onclick="showPage('curso-acompanhamento')">🚔 Curso de Acompanhamento</a>
+    <a class="nav-item nav-sub" onclick="showPage('curso-boosting')">🚗 Boosting</a>
+    <a class="nav-item nav-sub" onclick="showPage('curso-ruas')">🗺️ Ruas e Referências</a>
+    <a class="nav-item" onclick="showPage('curso-abordagem')">🤝 Curso de Abordagem</a>
   </nav>
 </aside>
 
@@ -1293,7 +1301,7 @@
 
       <div class="page-footer">
         <button class="footer-btn" onclick="showPage('infracoes')">← Anterior</button>
-        <button class="footer-btn" onclick="showPage('curso-modulacao')">Próximo: Modulação →</button>
+        <button class="footer-btn" onclick="showPage('curso-modulacao')">Próximo: Modulação e Anúncios →</button>
       </div>
     </div>
 
@@ -1366,7 +1374,7 @@
       </div>
 
       <div class="page-footer">
-        <button class="footer-btn" onclick="showPage('curso-comunicacao')">← Anterior</button>
+        <button class="footer-btn" onclick="showPage('curso-comunicacao')">← Comunicação Operacional</button>
         <button class="footer-btn" onclick="showPage('curso-tablet')">Próximo: Curso Tablet →</button>
       </div>
     </div>
@@ -1497,7 +1505,7 @@
 
       <div class="page-footer">
         <button class="footer-btn" onclick="showPage('curso-tablet')">← Anterior</button>
-        <button class="footer-btn" onclick="showPage('curso-abordagem')">Próximo: Curso Abordagem →</button>
+        <button class="footer-btn" onclick="showPage('curso-boosting')">Próximo: Boosting →</button>
       </div>
     </div>
 
@@ -1573,8 +1581,8 @@
       </div>
 
       <div class="page-footer">
-        <button class="footer-btn" onclick="showPage('curso-acompanhamento')">← Anterior</button>
-        <button class="footer-btn" onclick="showPage('curso-boosting')">Próximo: Boosting →</button>
+        <button class="footer-btn" onclick="showPage('curso-ruas')">← Ruas e Referências</button>
+        <span style="color: var(--text-muted); font-size: 12px;">Fim dos Manuais</span>
       </div>
     </div>
 
@@ -1636,7 +1644,7 @@
       <p>Com a captura, os indivíduos serão conduzidos pelo crime de Boosting, que <strong>não tem direito a fiança</strong>. Aplique apenas o crime de Boosting.</p>
 
       <div class="page-footer">
-        <button class="footer-btn" onclick="showPage('curso-abordagem')">← Anterior</button>
+        <button class="footer-btn" onclick="showPage('curso-acompanhamento')">← Curso de Acompanhamento</button>
         <button class="footer-btn" onclick="showPage('curso-ruas')">Próximo: Ruas e Referências →</button>
       </div>
     </div>
@@ -1682,8 +1690,8 @@
       </table>
 
       <div class="page-footer">
-        <button class="footer-btn" onclick="showPage('curso-boosting')">← Anterior</button>
-        <span style="color: var(--text-muted); font-size: 12px;">Fim dos Manuais</span>
+        <button class="footer-btn" onclick="showPage('curso-boosting')">← Boosting</button>
+        <button class="footer-btn" onclick="showPage('curso-abordagem')">Próximo: Curso de Abordagem →</button>
       </div>
     </div>
 
